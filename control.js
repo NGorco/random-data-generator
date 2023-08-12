@@ -36,7 +36,7 @@ class Control extends Easy {
 
   generate() {
     let input = eval(`(${this.input})`);
-    console.log(this.processObject(input))
+    window.output.innerHTML = JSON.stringify(this.processObject(input), null, 2);
   }
 
   processItem(input) {
